@@ -1,0 +1,60 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Navigation Example',
+      home: HomePage(),
+      routes: {
+        '/new_page': (context) => NewPage(),
+      },
+    );
+  }
+}
+
+class HomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Home'),
+      ),
+      body: Center(
+        child: GestureDetector(
+          onTap: () {
+            Navigator.pushNamed(context, '/new_page');
+          },
+          child: Text('Navigate to New Page'),
+        ),
+      ),
+    );
+  }
+}
+
+class NewPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('New Page'),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text('This is the new page'),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: Text('Go back'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
