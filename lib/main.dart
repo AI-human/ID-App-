@@ -5,7 +5,13 @@ void main() => runApp(MaterialApp(
       home: Id_card(),
     ));
 
-class Id_card extends StatelessWidget {
+class Id_card extends StatefulWidget {
+  @override
+  State<Id_card> createState() => _Id_cardState();
+}
+
+class _Id_cardState extends State<Id_card> {
+  int semester = 1;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,6 +28,18 @@ class Id_card extends StatelessWidget {
         centerTitle: true,
         elevation: 0.0,
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          setState(() {
+            semester++;
+            if (semester >= 9) {
+              semester = 1;
+            }
+          });
+        },
+        child: Icon(Icons.add),
+        backgroundColor: Colors.grey[800],
+      ),
       body: Container(
         child: Padding(
           padding: EdgeInsets.fromLTRB(30, 40, 30, 0),
@@ -30,8 +48,8 @@ class Id_card extends StatelessWidget {
               children: <Widget>[
                 Center(
                   child: CircleAvatar(
-                    backgroundImage: AssetImage(
-                        '/home/Ai-uman/practise/assets/ProfilePicturePhoto.jpg'),
+                    backgroundImage:
+                        AssetImage('assets/ProfilePicturePhoto.jpg'),
                     radius: 50.0,
                   ),
                 ),
@@ -72,7 +90,7 @@ class Id_card extends StatelessWidget {
                   height: 7.0,
                 ),
                 Text(
-                  '3rd',
+                  '$semester',
                   style: TextStyle(
                     color: Color.fromARGB(255, 240, 255, 34),
                     letterSpacing: 2.0,
