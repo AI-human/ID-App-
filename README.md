@@ -1,4 +1,4 @@
-# Crossplatform ID app for University
+# Crossplatform ID card app for University
 
 OS: Android
 <br/>
