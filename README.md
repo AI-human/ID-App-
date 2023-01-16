@@ -1,16 +1,16 @@
-# practise
+# Crossplatform ID app for Univarsity
 
-A new Flutter project.
+OS: Android
+<br/>
+![photo_6208771038125338867_y](https://user-images.githubusercontent.com/87533896/212621190-f335e1ba-c6ad-4921-bbc9-115344d2cb6d.jpg)
 
-## Getting Started
+<br/>
 
-This project is a starting point for a Flutter application.
+OS: MX Linux 
+<br/>
+![Screenshot_2023-01-16_13-31-00](https://user-images.githubusercontent.com/87533896/212621828-83ed7522-84f6-41b1-83dd-b5076a12fa07.png)
 
-A few resources to get you started if this is your first Flutter project:
+Web: Chrome
+<br/>
+![Screenshot_2023-01-16_13-34-25](https://user-images.githubusercontent.com/87533896/212622341-35c6561f-84f7-4fe2-81a8-0d104ef11432.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
