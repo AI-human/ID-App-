@@ -1,4 +1,4 @@
-# Crossplatform ID app for Univarsity
+# Crossplatform ID app for University
 
 OS: Android
 <br/>
